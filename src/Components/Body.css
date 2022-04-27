@@ -1,7 +1,33 @@
+.site-body {
+  height: 100%;
+}
+
 .panel {
-  background-color: black;
+  background-color: #37474f;
 }
 
 .body {
-  background-color: blueviolet;
+  /* background-color: rgb(196, 196, 196); */
+  background-image: url("/src/Images/unsplash.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.my-avatar {
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.site-body h3,
+p {
+  text-align: center;
+  color: #eceff1;
+  padding: 10px;
+}
+
+.social-network {
+  margin-top: 20px;
 }
