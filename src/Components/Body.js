@@ -14,7 +14,6 @@ import Tooltip, { tooltipClasses } from "@mui/material/Tooltip";
 import Zoom from "@mui/material/Zoom";
 import { styled } from "@mui/material/styles";
 import Link from "@mui/material/Link";
-import Box from "@mui/material/Box";
 
 const LightTooltip = styled(({ className, ...props }) => (
   <Tooltip {...props} classes={{ popper: className }} />
