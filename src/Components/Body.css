@@ -13,6 +13,8 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 20px;
+  overflow-y: scroll;
 }
 
 .my-avatar {
@@ -21,8 +23,8 @@
   margin-top: 20px;
 }
 
-.site-body h3,
-p {
+.panel h3,
+.panel p {
   text-align: center;
   color: #eceff1;
   padding: 10px;
@@ -30,4 +32,30 @@ p {
 
 .social-network {
   margin-top: 20px;
+}
+
+.div-footer {
+  color: white;
+}
+
+@media (min-width: 600px) {
+  .div-footer {
+    position: absolute;
+    bottom: 0;
+    color: white;
+  }
+
+  .body {
+    overflow-y: scroll;
+  }
+}
+
+@media (max-width: 600px) {
+  .div-body {
+    padding-left: 20px;
+  }
+}
+
+.div-body h1 {
+  text-align: center;
 }
