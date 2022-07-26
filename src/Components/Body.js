@@ -287,6 +287,26 @@ function Body() {
                   Completed tasks:
                   <br></br>- Software developer
                 </p>
+                <p>
+                  <Link
+                    aria-label="Payabli Inc."
+                    href="https://www.payabli.com/"
+                    underline="none"
+                    target="_blank"
+                    color="inherit"
+                  >
+                    <strong>
+                      Payabli Inc.
+                    </strong>
+                  </Link>
+                  <br></br>
+                  19/05/2022 - Present
+                  <br></br>
+                  Company made in California, USA
+                  <br></br>
+                  Completed tasks:
+                  <br></br>- Frontend developer
+                </p>
               </div>
             </Grid>
             <Grid item xs={12} sm={6} md={6}>
@@ -298,7 +318,7 @@ function Body() {
                   <strong>Programming languages</strong>
                   <br></br>● Java
                   <br></br>● ASP.NET/C#
-                  <br></br>● HTML, CSS, JavaScript
+                  <br></br>● JavaScript
                   <br></br>● PHP
                   <br></br>● Ruby
                 </p>
@@ -309,8 +329,8 @@ function Body() {
                 </p>
                 <p>
                   <strong>Other development technologies</strong>
+                  <br></br>● React
                   <br></br>● Android applications
-                  <br></br>● ReactJS
                   <br></br>● WordPress
                 </p>
                 <p>
