@@ -295,9 +295,7 @@ function Body() {
                     target="_blank"
                     color="inherit"
                   >
-                    <strong>
-                      Payabli Inc.
-                    </strong>
+                    <strong>Payabli Inc.</strong>
                   </Link>
                   <br></br>
                   19/05/2022 - Present
