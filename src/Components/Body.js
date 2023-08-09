@@ -33,22 +33,23 @@ function Body() {
       <Grid
         className="panel"
         item
-        sx={{ display: { xs: "none", sm: "block", md: "block" } }}
+        sx={{ display: { xs: "block", sm: "block", md: "block" } }}
         xs={12}
         sm={4}
         md={3}
       >
-        <Stack spacing={2} alignItems="center">
+        <Stack alignItems="center">
           <Avatar
             className="my-avatar"
             alt="Jose Orlando"
             src={MyAvatar}
             sx={{ width: 150, height: 150 }}
           />
-          <h3>Ing. Jose Orlando Perez Villegas</h3>
+          <h3>Eng. Jose Orlando</h3>
           <p>
-            I am a software developer, graduated from UCi, Cuba. Since 2017 I
-            have been linked to the sector.
+            A software developer from UCI, Cuba. Passionate about programming,
+            experienced in various tech areas. Excited to learn new tech and
+            grow professionally.
           </p>
         </Stack>
         <Stack
@@ -64,7 +65,7 @@ function Body() {
               <Link
                 sx={{ color: blueGrey[50] }}
                 aria-label="upload picture"
-                href="https://github.com/jopvcc"
+                href="https://github.com/joperezcf"
                 underline="none"
                 target="_blank"
               >
@@ -103,7 +104,7 @@ function Body() {
               <Link
                 sx={{ color: blueGrey[50] }}
                 aria-label="upload picture"
-                href="mailto:jopvcc@gmail.com"
+                href="mailto:emailplus360@gmail.com"
                 underline="none"
                 target="_blank"
               >
@@ -145,7 +146,7 @@ function Body() {
                   <br></br>
                   Havana, Cuba
                   <br></br>
-                  03/09/2012 - 20/06/2017
+                  09/03/2012 - 06/20/2017
                   <br></br>
                   Computer Science Engineer
                 </p>
@@ -170,7 +171,7 @@ function Body() {
                     </strong>
                   </Link>
                   <br></br>
-                  30/06/2016
+                  06/30/2016
                   <br></br>
                   Android application development
                 </p>
@@ -187,7 +188,7 @@ function Body() {
                   <br></br>
                   Havana, Cuba
                   <br></br>
-                  23/02/2018
+                  03/23/2018
                   <br></br>
                   Introduction to the semantic web
                 </p>
@@ -257,9 +258,8 @@ function Body() {
                     </strong>
                   </Link>
                   <br></br>
-                  01/09/2017 - 30/04/2019
+                  09/01/2017 - 04/30/2019
                   <br></br>
-                  Address: Ave 58 e/43 y 45, ETECSA Territorial Division
                   Cienfuegos, Cuba
                   <br></br>
                   Completed tasks:
@@ -282,7 +282,7 @@ function Body() {
                   <br></br>
                   01/05/2019 - 30/09/2021
                   <br></br>
-                  Address: Ave 2 No. 3505 e/ 35 y 37 Cienfuegos, Cuba
+                  Cienfuegos, Cuba
                   <br></br>
                   Completed tasks:
                   <br></br>- Software developer
@@ -300,7 +300,7 @@ function Body() {
                   <br></br>
                   19/05/2022 - Present
                   <br></br>
-                  Company made in California, USA
+                  Miami Fl, USA
                   <br></br>
                   Completed tasks:
                   <br></br>- Frontend developer
@@ -318,12 +318,10 @@ function Body() {
                   <br></br>● ASP.NET/C#
                   <br></br>● JavaScript
                   <br></br>● PHP
-                  <br></br>● Ruby
                 </p>
                 <p>
                   <strong>Framework</strong>
                   <br></br>● Yii Framework PHP
-                  <br></br>● Ruby on Rails
                 </p>
                 <p>
                   <strong>Other development technologies</strong>
