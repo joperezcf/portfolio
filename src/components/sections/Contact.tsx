@@ -1,6 +1,6 @@
 import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
-import { Mail, Github, Linkedin, Send, type LucideIcon } from 'lucide-react'
+import { Mail, Github, Linkedin, type LucideIcon } from 'lucide-react'
 import { useLang } from '../../context/LangContext'
 import type { Translations } from '../../i18n/en'
 
@@ -20,7 +20,6 @@ const links: SocialLink[] = [
   { icon: Mail, labelKey: 'email', href: 'mailto:emailplus360@gmail.com', color: 'hover:text-red-500' },
   { icon: Github, labelKey: 'github', href: 'https://github.com/joperezcf', color: 'hover:text-slate-900 dark:hover:text-white' },
   { icon: Linkedin, labelKey: 'linkedin', href: 'https://www.linkedin.com/in/joperezcf', color: 'hover:text-blue-600' },
-  { icon: Send, labelKey: 'telegram', href: 'https://t.me/jopvcc', color: 'hover:text-sky-500' },
 ]
 
 export default function Contact() {

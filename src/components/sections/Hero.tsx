@@ -3,6 +3,9 @@ import { MapPin, Circle, Download, ArrowDown, Github, Linkedin } from 'lucide-re
 import { useLang } from '../../context/LangContext'
 import profileImg from '../../assets/perfil.jpg'
 
+// Set to company name when employed, or null when available
+const CURRENT_COMPANY: string | null = 'Payabli Inc.'
+
 const techPills = ['React', 'TypeScript', '.NET', 'PostgreSQL', 'Docker']
 
 const container = {
@@ -21,7 +24,7 @@ export default function Hero() {
     <section id="hero" className="min-h-screen flex items-center relative overflow-hidden pt-16">
       {/* Background grid */}
       <div
-        className="absolute inset-0 opacity-[0.03] dark:opacity-[0.05]"
+        className="absolute inset-0 opacity-[0.03] dark:opacity-[0.05] pointer-events-none"
         style={{
           backgroundImage:
             'linear-gradient(#06B6D4 1px, transparent 1px), linear-gradient(to right, #06B6D4 1px, transparent 1px)',
@@ -45,10 +48,12 @@ export default function Hero() {
                 <MapPin size={13} />
                 {t.hero.location}
               </span>
-              <span className="flex items-center gap-1.5 text-sm text-emerald-600 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-900/20 px-3 py-1 rounded-full">
-                <Circle size={8} className="fill-emerald-500" />
-                {t.hero.available}
-              </span>
+              {!CURRENT_COMPANY && (
+                <span className="flex items-center gap-1.5 text-sm text-emerald-600 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-900/20 px-3 py-1 rounded-full">
+                  <Circle size={8} className="fill-emerald-500" />
+                  {t.hero.available}
+                </span>
+              )}
             </motion.div>
 
             <motion.p variants={item} className="text-lg text-slate-500 dark:text-slate-400 font-medium mb-2">
@@ -143,15 +148,17 @@ export default function Hero() {
                 />
               </div>
               {/* Floating badge */}
-              <motion.div
-                className="absolute -bottom-4 -right-4 bg-white dark:bg-dark-surface rounded-xl px-3 py-2 shadow-lg border border-light-border dark:border-dark-border"
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.8, duration: 0.4 }}
-              >
-                <p className="text-xs font-medium text-slate-500 dark:text-slate-400">Currently at</p>
-                <p className="text-sm font-bold text-slate-900 dark:text-white">Payabli Inc.</p>
-              </motion.div>
+              {CURRENT_COMPANY && (
+                <motion.div
+                  className="absolute -bottom-4 -right-4 bg-white dark:bg-dark-surface rounded-xl px-3 py-2 shadow-lg border border-light-border dark:border-dark-border"
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.8, duration: 0.4 }}
+                >
+                  <p className="text-xs font-medium text-slate-500 dark:text-slate-400">Currently at</p>
+                  <p className="text-sm font-bold text-slate-900 dark:text-white">{CURRENT_COMPANY}</p>
+                </motion.div>
+              )}
             </div>
           </motion.div>
         </div>

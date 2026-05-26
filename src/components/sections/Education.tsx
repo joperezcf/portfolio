@@ -39,6 +39,15 @@ const educationData: EducationEntry[] = [
     url: 'https://www.uci.cu/',
     type: 'cert',
   },
+  {
+    institution: 'Udemy',
+    location: 'Online',
+    period: 'Nov 2025',
+    degree: 'Certificate — Hands on C# .NET: Entity Framework Core',
+    url: 'https://www.udemy.com/certificate/UC-fdd6cb54-c7ae-45f2-aadf-8e2e30110baf/',
+    type: 'cert',
+    verifyUrl: 'https://www.udemy.com/certificate/UC-fdd6cb54-c7ae-45f2-aadf-8e2e30110baf/',
+  },
 ]
 
 const fadeUp = {

@@ -16,7 +16,7 @@ export const en = {
       'Crafting fast, accessible, and user-centric web applications with React and TypeScript. Currently at Payabli, powering embedded finance for software platforms.',
     viewWork: 'View Work',
     downloadCV: 'Download CV',
-    location: 'Miami, FL',
+    location: 'USA',
     available: 'Open to opportunities',
   },
   about: {
@@ -68,7 +68,6 @@ export const en = {
     email: 'Send an Email',
     github: 'GitHub',
     linkedin: 'LinkedIn',
-    telegram: 'Telegram',
   },
   footer: {
     built: 'Built with React, TypeScript & Tailwind',

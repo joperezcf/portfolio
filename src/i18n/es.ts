@@ -18,7 +18,7 @@ export const es: Translations = {
       'Desarrollando aplicaciones web rápidas, accesibles y centradas en el usuario con React y TypeScript. Actualmente en Payabli, impulsando finanzas embebidas para plataformas de software.',
     viewWork: 'Ver Proyectos',
     downloadCV: 'Descargar CV',
-    location: 'Miami, FL',
+    location: 'USA',
     available: 'Abierto a oportunidades',
   },
   about: {
@@ -70,7 +70,6 @@ export const es: Translations = {
     email: 'Enviar Email',
     github: 'GitHub',
     linkedin: 'LinkedIn',
-    telegram: 'Telegram',
   },
   footer: {
     built: 'Construido con React, TypeScript y Tailwind',
