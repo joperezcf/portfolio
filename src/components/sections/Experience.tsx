@@ -19,7 +19,7 @@ const roles: Role[] = [
   {
     company: 'Payabli Inc.',
     url: 'https://www.payabli.com/',
-    role: 'Frontend Engineer',
+    role: 'Software Engineer',
     startDate: 'May 2022',
     location: 'Miami, FL (Remote)',
     description: 'Fintech company building embedded payment infrastructure for software platforms.',
