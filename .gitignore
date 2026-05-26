@@ -1,15 +1,14 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
 # dependencies
 /node_modules
-/.pnp
-.pnp.js
 
 # testing
 /coverage
 
-# production
-/build
+# production (Vite outputs to dist)
+/dist
+
+# Claude Code local files
+.claude/
 
 # Claude Code local files
 .claude/
@@ -22,7 +21,6 @@
 .env.production.local
 
 npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# prevent accidental commits of other package manager lockfiles
 package-lock.json
 yarn.lock

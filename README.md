@@ -1,57 +1,49 @@
-# Your Name's Developer Portfolio
+# Jose Orlando — Developer Portfolio
 
-![Project Screenshot](screenshot.png)
+Personal portfolio website built with React, TypeScript, and Tailwind CSS. Features bilingual support (EN/ES), dark/light mode, and smooth animations.
 
-## About
+**Live site:** https://joperezcf.github.io/portfolio/
 
-Welcome to my Developer Portfolio repository! This project showcases my journey and expertise as a software developer. It serves as a comprehensive overview of my skills, work experience, education, and programming languages.
+## Tech Stack
 
-## Table of Contents
+- **Framework:** React 18 + TypeScript
+- **Build tool:** Vite
+- **Styling:** Tailwind CSS
+- **Animations:** Framer Motion
+- **Icons:** Lucide React
+- **Deployment:** GitHub Pages via gh-pages
 
-- [About](#about)
-- [Projects](#projects)
-- [Skills](#skills)
-- [Education](#education)
-- [Contact](#contact)
+## Features
 
-## Projects
+- Bilingual — English / Spanish toggle
+- Dark / light mode (auto-detects system preference)
+- Scroll-spy navigation with active section highlight
+- Smooth entrance animations on scroll
+- Fully responsive (mobile-first)
+- Print-optimized CV layout (`window.print()`)
 
-Here are some of the notable projects I've worked on:
+## Sections
 
-### Project Name 1
+Hero · About · Skills · Experience · Projects · Education · Contact
 
-Short description of Project 1.
+## Getting Started
 
-### Project Name 2
+```bash
+pnpm install
+pnpm dev
+```
 
-Short description of Project 2.
+Open `http://localhost:5173/portfolio/`
 
-...
+## Build & Deploy
 
-## Skills
-
-My technical skills include:
-
-- Programming Languages: JavaScript, Python, Java
-- Frontend Development: React, HTML, CSS
-- Backend Development: Node.js, Express
-- Database: MongoDB, MySQL
-- Version Control: Git
-- ... (Add more skills as needed)
-
-## Education
-
-- Master of Science in Computer Science
-  - University Name, Graduation Year
-- Bachelor of Engineering in Software Engineering
-  - University Name, Graduation Year
+```bash
+pnpm run build     # TypeScript check + Vite build → dist/
+pnpm run deploy    # build + push to gh-pages branch
+```
 
 ## Contact
 
-Feel free to get in touch with me:
-
-- Email: your.email@example.com
-- LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/in/yourprofile/)
-- GitHub: [Your GitHub Profile](https://github.com/yourusername)
-
-Looking forward to connecting and collaborating with fellow developers!
+- **Email:** emailplus360@gmail.com
+- **LinkedIn:** [linkedin.com/in/joperezcf](https://www.linkedin.com/in/joperezcf)
+- **GitHub:** [github.com/joperezcf](https://github.com/joperezcf)
