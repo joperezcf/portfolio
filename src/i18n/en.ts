@@ -11,7 +11,7 @@ export const en = {
   hero: {
     greeting: "Hi, I'm",
     name: 'Jose Orlando',
-    title: 'Frontend Engineer & Full-Stack Developer',
+    title: 'Software Engineer',
     description:
       'Crafting fast, accessible, and user-centric web applications with React and TypeScript. Currently at Payabli, powering embedded finance for software platforms.',
     viewWork: 'View Work',

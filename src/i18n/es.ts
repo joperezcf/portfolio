@@ -13,7 +13,7 @@ export const es: Translations = {
   hero: {
     greeting: 'Hola, soy',
     name: 'Jose Orlando',
-    title: 'Ingeniero Frontend & Desarrollador Full-Stack',
+    title: 'Ingeniero de Software',
     description:
       'Desarrollando aplicaciones web rápidas, accesibles y centradas en el usuario con React y TypeScript. Actualmente en Payabli, impulsando finanzas embebidas para plataformas de software.',
     viewWork: 'Ver Proyectos',
