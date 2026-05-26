@@ -1,8 +1,8 @@
-# Jose Orlando — Developer Portfolio
+# Jose Orlando — Portfolio
 
 Personal portfolio website built with React, TypeScript, and Tailwind CSS. Features bilingual support (EN/ES), dark/light mode, and smooth animations.
 
-**Live site:** https://joperezcf.github.io/portfolio/
+**Live:** [joseorlando.dev](https://joseorlando.dev)
 
 ## Tech Stack
 
@@ -11,7 +11,6 @@ Personal portfolio website built with React, TypeScript, and Tailwind CSS. Featu
 - **Styling:** Tailwind CSS
 - **Animations:** Framer Motion
 - **Icons:** Lucide React
-- **Deployment:** GitHub Pages via gh-pages
 
 ## Features
 
@@ -20,7 +19,7 @@ Personal portfolio website built with React, TypeScript, and Tailwind CSS. Featu
 - Scroll-spy navigation with active section highlight
 - Smooth entrance animations on scroll
 - Fully responsive (mobile-first)
-- Print-optimized CV layout (`window.print()`)
+- Print-optimized CV layout
 
 ## Sections
 
@@ -33,17 +32,15 @@ pnpm install
 pnpm dev
 ```
 
-Open `http://localhost:5173/portfolio/`
+Open `http://localhost:5173`
 
-## Build & Deploy
+## Build
 
 ```bash
-pnpm run build     # TypeScript check + Vite build → dist/
-pnpm run deploy    # build + push to gh-pages branch
+pnpm run build   # TypeScript check + Vite build → dist/
 ```
 
 ## Contact
 
-- **Email:** emailplus360@gmail.com
 - **LinkedIn:** [linkedin.com/in/joperezcf](https://www.linkedin.com/in/joperezcf)
 - **GitHub:** [github.com/joperezcf](https://github.com/joperezcf)
