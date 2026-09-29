@@ -2,33 +2,7 @@ import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 import { useLang } from '../../context/LangContext'
 import { cn } from '../../lib/utils'
-
-const skillGroups = [
-  {
-    key: 'frontend',
-    skills: ['React 18', 'TypeScript', 'JavaScript (ES2022+)', 'HTML5', 'CSS3', 'TanStack Query', 'Storybook'],
-  },
-  {
-    key: 'styling',
-    skills: ['Tailwind CSS', 'Material UI', 'CSS Modules', 'Sass'],
-  },
-  {
-    key: 'backend',
-    skills: ['ASP.NET Core', 'C#', 'Node.js', 'PostgreSQL', 'REST APIs'],
-  },
-  {
-    key: 'testing',
-    skills: ['Jest', 'React Testing Library'],
-  },
-  {
-    key: 'tools',
-    skills: ['Docker', 'Figma', 'Git', 'GitHub Actions', 'Vite', 'Webpack'],
-  },
-  {
-    key: 'previous',
-    skills: ['Java', 'PHP', 'Yii Framework', 'Android SDK', 'WordPress'],
-  },
-]
+import { skillGroups } from '../../data/profile'
 
 const accentColors: Record<string, string> = {
   frontend: 'bg-cyan-50 text-cyan-700 border-cyan-200 dark:bg-cyan-900/20 dark:text-cyan-300 dark:border-cyan-800',
@@ -58,7 +32,7 @@ export default function Skills() {
           variants={{ hidden: {}, show: { transition: { staggerChildren: 0.1 } } }}
         >
           <motion.div variants={fadeUp} className="mb-12">
-            <p className="text-accent font-semibold text-sm uppercase tracking-wider mb-2">{t.skills.title}</p>
+            <p className="font-mono text-accent text-sm mb-2">02 / {t.nav.skills.toLowerCase()}</p>
             <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white">{t.skills.title}</h2>
             <p className="mt-3 text-slate-500 dark:text-slate-400">{t.skills.subtitle}</p>
           </motion.div>

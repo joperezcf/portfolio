@@ -104,13 +104,14 @@ export default function Navbar() {
           </button>
 
           {/* Download CV */}
-          <button
-            onClick={() => window.print()}
+          <a
+            href="/Jose-Orlando-CV.pdf"
+            download
             className="hidden sm:flex items-center gap-1.5 px-3 py-1.5 rounded-md text-sm font-medium bg-accent text-white hover:bg-accent-dark transition-colors"
           >
             <Download size={14} />
             {t.nav.downloadCV}
-          </button>
+          </a>
 
           {/* Mobile menu toggle */}
           <button
@@ -156,13 +157,14 @@ export default function Navbar() {
                 >
                   {lang === 'en' ? 'Español' : 'English'}
                 </button>
-                <button
-                  onClick={() => window.print()}
+                <a
+                  href="/Jose-Orlando-CV.pdf"
+                  download
                   className="flex-1 flex items-center justify-center gap-1.5 px-3 py-2 rounded-md text-sm font-medium bg-accent text-white"
                 >
                   <Download size={14} />
                   CV
-                </button>
+                </a>
               </li>
             </ul>
           </motion.div>

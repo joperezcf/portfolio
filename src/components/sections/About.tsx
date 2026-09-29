@@ -33,9 +33,7 @@ export default function About() {
         animate={inView ? 'show' : 'hidden'}
       >
         <motion.div variants={fadeUp} className="mb-12">
-          <p className="text-accent font-semibold text-sm uppercase tracking-wider mb-2">
-            {t.about.title}
-          </p>
+          <p className="font-mono text-accent text-sm mb-2">01 / {t.nav.about.toLowerCase()}</p>
           <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white">
             {t.about.title}
           </h2>

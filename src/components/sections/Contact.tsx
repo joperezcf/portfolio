@@ -37,7 +37,7 @@ export default function Contact() {
         variants={{ hidden: {}, show: { transition: { staggerChildren: 0.15 } } }}
       >
         <motion.div variants={fadeUp} className="mb-4">
-          <p className="text-accent font-semibold text-sm uppercase tracking-wider mb-2">{t.contact.title}</p>
+          <p className="font-mono text-accent text-sm mb-2">06 / {t.nav.contact.toLowerCase()}</p>
           <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white">{t.contact.title}</h2>
         </motion.div>
 

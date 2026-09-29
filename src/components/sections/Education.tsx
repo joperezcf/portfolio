@@ -2,53 +2,7 @@ import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 import { ExternalLink, GraduationCap, Award } from 'lucide-react'
 import { useLang } from '../../context/LangContext'
-
-interface EducationEntry {
-  institution: string
-  location: string
-  period: string
-  degree: string
-  url: string
-  type: 'degree' | 'cert'
-  verifyUrl?: string
-}
-
-const educationData: EducationEntry[] = [
-  {
-    institution: 'University of Computer Science (UCI)',
-    location: 'Havana, Cuba',
-    period: '2012 – 2017',
-    degree: "Bachelor's — Computer Science Engineering",
-    url: 'https://www.uci.cu/',
-    type: 'degree',
-  },
-  {
-    institution: 'National Autonomous University of Mexico (UNAM) via Coursera',
-    location: 'Online',
-    period: 'Jun 2016',
-    degree: 'Certificate — Android Application Development',
-    url: 'https://www.coursera.org/account/accomplishments/verify/ZWLHPH9Z927Z',
-    type: 'cert',
-    verifyUrl: 'https://www.coursera.org/account/accomplishments/verify/ZWLHPH9Z927Z',
-  },
-  {
-    institution: 'University of Computer Science (UCI)',
-    location: 'Havana, Cuba',
-    period: 'Mar 2018',
-    degree: 'Certificate — Introduction to the Semantic Web',
-    url: 'https://www.uci.cu/',
-    type: 'cert',
-  },
-  {
-    institution: 'Udemy',
-    location: 'Online',
-    period: 'Nov 2025',
-    degree: 'Certificate — Hands on C# .NET: Entity Framework Core',
-    url: 'https://www.udemy.com/certificate/UC-fdd6cb54-c7ae-45f2-aadf-8e2e30110baf/',
-    type: 'cert',
-    verifyUrl: 'https://www.udemy.com/certificate/UC-fdd6cb54-c7ae-45f2-aadf-8e2e30110baf/',
-  },
-]
+import { educationData } from '../../data/profile'
 
 const fadeUp = {
   hidden: { opacity: 0, y: 20 },
@@ -69,7 +23,7 @@ export default function Education() {
           variants={{ hidden: {}, show: { transition: { staggerChildren: 0.15 } } }}
         >
           <motion.div variants={fadeUp} className="mb-12">
-            <p className="text-accent font-semibold text-sm uppercase tracking-wider mb-2">{t.education.title}</p>
+            <p className="font-mono text-accent text-sm mb-2">05 / {t.nav.education.toLowerCase()}</p>
             <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white">{t.education.title}</h2>
             <p className="mt-3 text-slate-500 dark:text-slate-400">{t.education.subtitle}</p>
           </motion.div>

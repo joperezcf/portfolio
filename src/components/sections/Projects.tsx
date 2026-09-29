@@ -2,44 +2,7 @@ import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 import { Github, ExternalLink } from 'lucide-react'
 import { useLang } from '../../context/LangContext'
-
-interface Project {
-  titleEn: string
-  titleEs: string
-  descEn: string
-  descEs: string
-  stack: string[]
-  github: string
-  live?: string
-}
-
-const projects: Project[] = [
-  {
-    titleEn: 'Personal Portfolio',
-    titleEs: 'Portfolio Personal',
-    descEn: "The site you're on right now. Built with Vite, React, TypeScript, Tailwind CSS, and shadcn/ui. Features bilingual support (EN/ES), dark/light mode, and smooth animations.",
-    descEs: 'El sitio que estás viendo ahora. Construido con Vite, React, TypeScript, Tailwind CSS y shadcn/ui. Soporte bilingüe (EN/ES), modo oscuro/claro y animaciones suaves.',
-    stack: ['React', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'Vite'],
-    github: 'https://github.com/joperezcf/portfolio',
-    live: 'https://joperezcf.github.io/portfolio/',
-  },
-  {
-    titleEn: 'qEstudiare',
-    titleEs: 'qEstudiare',
-    descEn: 'Android app to help Cuban students explore university careers, navigate academic offerings, and make informed decisions about their studies.',
-    descEs: 'Aplicación Android para ayudar a estudiantes cubanos a explorar carreras universitarias, navegar la oferta académica y tomar decisiones informadas sobre sus estudios.',
-    stack: ['Java', 'Android SDK'],
-    github: 'https://github.com/joperezcf/qestudiare',
-  },
-  {
-    titleEn: 'm-SMS',
-    titleEs: 'm-SMS',
-    descEn: 'Desktop application for sending bulk SMS messages through the Moises Soft platform. Built to simplify mass communication workflows.',
-    descEs: 'Aplicación de escritorio para envío masivo de mensajes SMS a través de la plataforma Moises Soft. Construida para simplificar flujos de comunicación masiva.',
-    stack: ['Java'],
-    github: 'https://github.com/joperezcf/m-SMS',
-  },
-]
+import { projects } from '../../data/profile'
 
 const fadeUp = {
   hidden: { opacity: 0, y: 20 },
@@ -60,7 +23,7 @@ export default function Projects() {
           variants={{ hidden: {}, show: { transition: { staggerChildren: 0.15 } } }}
         >
           <motion.div variants={fadeUp} className="mb-12">
-            <p className="text-accent font-semibold text-sm uppercase tracking-wider mb-2">{t.projects.title}</p>
+            <p className="font-mono text-accent text-sm mb-2">04 / {t.nav.projects.toLowerCase()}</p>
             <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white">{t.projects.title}</h2>
             <p className="mt-3 text-slate-500 dark:text-slate-400">{t.projects.subtitle}</p>
           </motion.div>

@@ -89,13 +89,14 @@ export default function Hero() {
               >
                 {t.hero.viewWork}
               </button>
-              <button
-                onClick={() => window.print()}
+              <a
+                href="/Jose-Orlando-CV.pdf"
+                download
                 className="flex items-center gap-2 px-6 py-3 border-2 border-accent text-accent font-semibold rounded-lg hover:bg-accent/5 transition-colors"
               >
                 <Download size={16} />
                 {t.hero.downloadCV}
-              </button>
+              </a>
             </motion.div>
 
             <motion.div variants={item} className="flex items-center gap-4 mb-8">

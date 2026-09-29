@@ -2,63 +2,7 @@ import { useRef } from 'react'
 import { motion, useInView } from 'framer-motion'
 import { MapPin, ExternalLink } from 'lucide-react'
 import { useLang } from '../../context/LangContext'
-
-interface Role {
-  company: string
-  url: string
-  role: string
-  startDate: string
-  endDate?: string
-  location: string
-  description: string
-  bullets: string[]
-  current?: boolean
-}
-
-const roles: Role[] = [
-  {
-    company: 'Payabli Inc.',
-    url: 'https://www.payabli.com/',
-    role: 'Software Engineer',
-    startDate: 'May 2022',
-    location: 'Miami, FL (Remote)',
-    description: 'Fintech company building embedded payment infrastructure for software platforms.',
-    bullets: [
-      'Build React/TypeScript payment widgets and embedded components integrated into third-party platforms',
-      'Develop merchant dashboards and financial reporting interfaces handling complex data visualization',
-      'Contribute to full-stack features across the React frontend and .NET/C# backend with PostgreSQL',
-      'Maintain and extend component library documented with Storybook',
-      'Collaborate with design (Figma) and backend teams in an agile environment',
-    ],
-    current: true,
-  },
-  {
-    company: 'CIMEX Audita S.A.',
-    url: 'https://audita.cimex.com.cu/',
-    role: 'Software Developer',
-    startDate: 'Jan 2019',
-    endDate: 'Sep 2021',
-    location: 'Cienfuegos, Cuba',
-    description: 'IT auditing company under CIMEX Corporation.',
-    bullets: [
-      'Developed and maintained internal software tools for audit management',
-      'Built web applications supporting business operations and internal workflows',
-    ],
-  },
-  {
-    company: 'Ministry of Communications',
-    url: 'https://www.mincom.gob.cu/',
-    role: 'IT Specialist',
-    startDate: 'Sep 2017',
-    endDate: 'Apr 2019',
-    location: 'Cienfuegos, Cuba',
-    description: 'Territorial Control Office.',
-    bullets: [
-      'Provided software support and IT security for government communications infrastructure',
-      'Managed informatic security protocols and system maintenance',
-    ],
-  },
-]
+import { roles } from '../../data/profile'
 
 const fadeUp = {
   hidden: { opacity: 0, y: 20 },
@@ -79,7 +23,7 @@ export default function Experience() {
           variants={{ hidden: {}, show: { transition: { staggerChildren: 0.15 } } }}
         >
           <motion.div variants={fadeUp} className="mb-12">
-            <p className="text-accent font-semibold text-sm uppercase tracking-wider mb-2">{t.experience.title}</p>
+            <p className="font-mono text-accent text-sm mb-2">03 / {t.nav.experience.toLowerCase()}</p>
             <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white">{t.experience.title}</h2>
             <p className="mt-3 text-slate-500 dark:text-slate-400">{t.experience.subtitle}</p>
           </motion.div>

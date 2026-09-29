@@ -26,6 +26,9 @@
 @media print {
   .no-print { display: none !important; }
 
+  /* Framer Motion leaves off-screen sections at opacity 0 until scrolled into view. */
+  [style*="opacity"] { opacity: 1 !important; transform: none !important; }
+
   nav, footer { display: none !important; }
 
   #hero { min-height: auto; padding: 2rem 0 1rem; }
